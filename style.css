@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #5D5D7D;
+}
+
+header {
+  margin: 24px 60px 100px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+a:nth-child(2) {
+  opacity: 0.4;
+}
+
+a:hover {
+  opacity: .4;
+}
+
+a:active {
+  opacity: .8;
+}
+
+section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 80px;
+  width: 368px;
+}
+
+p {
+  color: var(--main-color);
+  font-size: 28px;
+  line-height: 48px;
+  opacity: 0.6;
+  width: 540px;
+  margin: 15px 0 15px 0;
+}
+
+button {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  width: 269px;
+  height: 62px;
+  background: #9499EA;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button:active {
+  opacity: .5;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    display: none;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 52px;
+    width: 268px;
+    text-align: center;
+    padding: 35px 36px 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 296px;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  img {
+    max-width: 271px;
+    padding: 60px 9px 0;
+  }
+}
